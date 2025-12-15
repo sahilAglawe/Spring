@@ -5,8 +5,18 @@
            http://www.springframework.org/schema/beans 
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloBean" class="kapilit.Demo">
-        <constructor-arg value="Hello Spring from Constructor" />
+    <bean id ="obj" class="kapilit.Demo">
+    
+    <constructor-arg value="20" type="int"></constructor-arg>
+    <constructor-arg value="30" type="int"></constructor-arg>
+    <constructor-arg >
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </list>
+        </constructor-arg>
     </bean>
 
 </beans>
