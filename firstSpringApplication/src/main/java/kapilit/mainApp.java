@@ -9,16 +9,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class mainApp {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         
-        Employee e1 = (Employee) context.getBean("emp");
-        File f = new File("emm.txt");
+        department dept = (department) context.getBean("dept");
+        
+        
+        System.out.println(dept);
+        
+        
+        
+    /*    File f = new File("emm.txt");
         try {
        
-			FileOutputStream fos = new FileOutputStream(f);
+		FileOutputStream fos = new FileOutputStream(f);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(e1);
 			oos.close();
@@ -37,11 +43,11 @@ public class mainApp {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+ 
         
-        
-      //  System.out.println(e1);
-       // demo.show();
-        //  demo.display();
+        System.out.println(e1);
+        demo.show();
+         demo.display();  */
         
 	}
 
