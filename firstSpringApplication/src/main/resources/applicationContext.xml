@@ -20,19 +20,54 @@
     </bean>
 
 
-<bean id="d1" class="kapilit.Address">
+<bean id="add1" class="kapilit.Address">
 <constructor-arg value="20" type="int"></constructor-arg>
 <constructor-arg value="Hyd"></constructor-arg>
 </bean>
 
-<bean id="emp" class="kapilit.Employee">
+<bean id="emp1" class="kapilit.Employee">
 <constructor-arg value="201" type="int"></constructor-arg>
 <constructor-arg value="Sahil" ></constructor-arg>
 <constructor-arg value="21" type="int"></constructor-arg>
 <constructor-arg value="20000" type="int"></constructor-arg>
-<constructor-arg >
-<ref bean="d1"></ref>
-</constructor-arg>
 </bean>
+
+<bean id="emp2" class="kapilit.Employee">
+<constructor-arg value="202" type="int"></constructor-arg>
+<constructor-arg value="Sujal" ></constructor-arg>
+<constructor-arg value="21" type="int"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+</bean>
+
+<bean id="emp3" class="kapilit.Employee">
+<constructor-arg value="203" type="int"></constructor-arg>
+<constructor-arg value="vaibhav" ></constructor-arg>
+<constructor-arg value="21" type="int"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+</bean>
+
+<bean id="emp4" class="kapilit.Employee">
+<constructor-arg value="204" type="int"></constructor-arg>
+<constructor-arg value="mahesh" ></constructor-arg>
+<constructor-arg value="21" type="int"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+</bean>
+
+
+<bean id="dept" class="kapilit.department">
+
+<constructor-arg>
+            <list>
+                <ref bean="emp1"/>
+                <ref bean="emp2"/>
+                <ref bean="emp3"/>
+                <ref bean="emp4"/>
+            </list>
+        </constructor-arg>
+
+</bean>
+
+
+
 
 </beans>
