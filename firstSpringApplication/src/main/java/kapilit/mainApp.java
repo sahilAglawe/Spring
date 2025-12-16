@@ -10,12 +10,12 @@ public class mainApp {
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         
-        Demo demo = (Demo) context.getBean("obj");
+        Employee e1 = (Employee) context.getBean("emp");
 
         
-       // System.out.println(demo);
+        System.out.println(e1);
        // demo.show();
-          demo.display();
+        //  demo.display();
         
 	}
 
