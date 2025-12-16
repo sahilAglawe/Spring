@@ -19,4 +19,20 @@
         </constructor-arg>
     </bean>
 
+
+<bean id="d1" class="kapilit.Address">
+<constructor-arg value="20" type="int"></constructor-arg>
+<constructor-arg value="Hyd"></constructor-arg>
+</bean>
+
+<bean id="emp" class="kapilit.Employee">
+<constructor-arg value="201" type="int"></constructor-arg>
+<constructor-arg value="Sahil" ></constructor-arg>
+<constructor-arg value="21" type="int"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+<constructor-arg >
+<ref bean="d1"></ref>
+</constructor-arg>
+</bean>
+
 </beans>
