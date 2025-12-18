@@ -68,6 +68,19 @@
 </bean>
 
 
+<bean id="clg" class="kapilit.colleage">
+
+<constructor-arg>
+            <map>
+                 <entry key="1" value="srm"/>
+                <entry key="2" value="bit"/>
+                <entry key="3" value="rcert"/>
+
+            </map>
+        </constructor-arg>
+
+</bean>
+
 
 
 </beans>
