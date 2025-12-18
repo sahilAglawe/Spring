@@ -12,16 +12,15 @@ public class mainApp {
 	public static void main(String[] args)  {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-
+     
+		Demo d = (Demo) context.getBean("objs1");
         
-        colleage clg = (colleage) context.getBean("clg");
-        
-        
-        System.out.println(clg);
-        
-        
-        
-    /*    File f = new File("emm.txt");
+		System.out.println(d);
+   
+		
+		/*     colleage clg = (colleage) context.getBean("clg");
+        System.out.println(clg);   
+        File f = new File("emm.txt");
         try {
        
 		FileOutputStream fos = new FileOutputStream(f);
