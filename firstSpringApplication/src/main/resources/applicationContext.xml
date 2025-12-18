@@ -68,19 +68,22 @@
 </bean>
 
 
-<bean id="clg" class="kapilit.colleage">
 
-<constructor-arg>
-            <map>
-                 <entry key="1" value="srm"/>
-                <entry key="2" value="bit"/>
-                <entry key="3" value="rcert"/>
 
-            </map>
-        </constructor-arg>
 
-</bean>
-
+   <bean id ="objs1" class="kapilit.Demo">
+    
+    <property name="i" value="20"/>
+    <property name="j" value="30" />
+    <property name="numbers">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </list>
+        </property>
+    </bean>
 
 
 </beans>
