@@ -86,4 +86,12 @@
     </bean>
 
 
+
+     <bean id="e1" class="kapilit.Employee">
+<property name="id" value="101" ></property>
+<property name="name" value="sahil" ></property>
+<property name="age" value="21" ></property>
+<property name="salary" value="10000" ></property>
+</bean>
+
 </beans>
