@@ -11,13 +11,13 @@ public class mainApp {
 
 	public static void main(String[] args)  {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         
-        department dept = (department) context.getBean("dept");
+        colleage clg = (colleage) context.getBean("clg");
         
         
-        System.out.println(dept);
+        System.out.println(clg);
         
         
         
