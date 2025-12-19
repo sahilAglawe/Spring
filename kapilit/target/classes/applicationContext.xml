@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="p1" class="kapilit.product">
+<property name="pId" value="101"/>
+ <property name="pName" value="laptop"/>
+ </bean>
+
+<bean id="p2" class="kapilit.product">
+<property name="pId" value="102"/>
+ <property name="pName" value="mobile"/>
+ </bean>
+
+<bean id="c" class="kapilit.customer">
+<property name="cId" value="1"/>
+ <property name="cName" value="Sahil"/>
+ <property name="products">
+ <map>
+ <entry key="11" value-ref="p1"/>
+  <entry key="12" value-ref="p2"/>
+ </map>
+ </property>
+ </bean>
+
+</beans>
