@@ -2,6 +2,8 @@ package kapilit.userdaoImple;
 
 import java.util.List;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import kapilit.user.user;
 import kapilit.userDAO.userDAO;
 
