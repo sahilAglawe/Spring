@@ -1,5 +1,7 @@
 package kapilit.user;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class user {
@@ -8,6 +10,9 @@ public class user {
 	private int uId;
 	private String uName;
 	
+	public user(int i, String string) {
+		// TODO Auto-generated constructor stub
+	}
 	public int getuId() {
 		return uId;
 	}
