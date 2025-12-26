@@ -28,14 +28,12 @@ public class AppConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 
-        LocalContainerEntityManagerFactoryBean emf =
-                new LocalContainerEntityManagerFactoryBean();
+        LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 
         emf.setDataSource(dataSource());
         emf.setPackagesToScan("jpademo.entity");
 
-        HibernateJpaVendorAdapter vendorAdapter =
-                new HibernateJpaVendorAdapter();
+        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setShowSql(true);
         vendorAdapter.setGenerateDdl(true);
 
@@ -50,4 +48,5 @@ public class AppConfig {
 
         return emf;
     }
+
 }
