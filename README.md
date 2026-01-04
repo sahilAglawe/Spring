@@ -205,12 +205,3 @@ By using this repository, you will:
 - Be prepared for interviews
 - Learn enterprise application design principles
 
----
-
-## 👨‍💻 Author
-**Sahil Aglawe**
-
----
-
-## ⭐ Support
-If you find this repository useful, consider giving it a ⭐ on GitHub!
