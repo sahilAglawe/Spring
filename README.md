@@ -144,6 +144,7 @@ Spring JDBC provides abstraction over traditional JDBC, reducing boilerplate cod
 Spring ORM integrates ORM frameworks with Spring.
 
 ### Supported ORM Tools:
+
 - Hibernate
 - JPA
 - MyBatis
