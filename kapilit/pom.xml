@@ -7,6 +7,7 @@
   <description>cp</description>
   
    <dependencies>
+     
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -18,6 +19,8 @@
         	<artifactId>firstSpringApplication</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
         </dependency>
+     
    </dependencies>
 
 </project>
+
