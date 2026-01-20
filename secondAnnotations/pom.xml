@@ -9,6 +9,7 @@
    <dependencies>
 
         <!-- ================= SPRING CORE ================= -->
+     
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -54,3 +55,4 @@
    </dependencies>
   
 </project>
+
