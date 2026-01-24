@@ -24,6 +24,7 @@
         </dependency>
 
         <!-- Spring Beans (optional as spring-context includes it) -->
+             
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
@@ -71,5 +72,6 @@
     </build>
 
 </project>
+
 
 
