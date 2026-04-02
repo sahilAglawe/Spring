@@ -11,6 +11,7 @@ public class customer {
 	public int getcId() {
 		return cId;
 	}
+	
 	public void setcId(int cId) {
 		this.cId = cId;
 	}
