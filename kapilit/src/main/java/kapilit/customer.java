@@ -7,6 +7,7 @@ public class customer {
 	private int cId;
 	private String cName;
 	private Map<Integer,product> products;
+	
 	public int getcId() {
 		return cId;
 	}
